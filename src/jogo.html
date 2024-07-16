@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="/js/jogoForca.js"></script>
+    <title>Document</title>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="resetarBoneco()">
+    <div class="tela__jogo">
+      <div class="tela__jogo__forca">
+        <div>
+            <div class="tela__boneco">
+              <div class="forca">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="boneco">
+                <div id="cabeca" class="boneco__cabeca"></div>
+                <div class="corpo__boneco" id="corpo">
+                  <div class="boneco__tronco">
+                    <div id="bracoE"></div>
+                    <div id="tronco"></div>
+                    <div id="bracoD"></div>
+                  </div>
+                  <div class="boneco__pernaEsquerda" id="pernaE"></div>
+                  <div class="boneco__pernaDireita" id="pernaD"></div>
+                </div>
+              </div>
+            </div>
+            <div class="palavraEscolhida" id="palavra"></div>
+            <div class="letrasErradas" id="chutes"></div>
+        </div>
+        <div class="btn__jogo__forca">
+          <button onclick="jogoForca()">Novo jogo</button>
+          <button onclick="location.href='../index.html'">Desistir</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
